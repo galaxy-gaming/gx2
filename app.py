@@ -80,7 +80,7 @@ def clear_runcount():
     for game in games:
         db.update('games', {'runcount': 0}, {'id': game['id']})
     return 'Runcount cleared successfully'
-# Static file routes
+
 @app.route('/credits')
 def credits():
     return send_from_directory('static/credits', 'index.html')
