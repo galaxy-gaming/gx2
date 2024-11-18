@@ -1,0 +1,97 @@
+.navbar {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+}
+
+.navbar-buttons {
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background 0.5s ease;
+    background: linear-gradient(180deg, #001D46, #0742BB, #429FD8);
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: white;
+}
+
+.navbar-buttons:hover {
+    background: black;
+}
+
+.navbar-buttons.active {
+    transition: background 0.5s ease;
+    background: linear-gradient(180deg, #001D46, #0742BB, #429FD8);
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: white;
+}
+
+.navbar-buttons-right {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;
+    transition: background 0.5s ease;
+    background: linear-gradient(180deg, #001D46, #0742BB, #429FD8);
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: white;
+}
+
+.navbar-buttons-right:hover {
+    background: black;
+}
+
+.navbar-buttons-right.active {
+    transition: background 0.5s ease;
+    background: linear-gradient(180deg, #001D46, #0742BB, #429FD8);
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: white;
+}
+
+.navbar-buttons-right-current {
+    margin-left: 5px;
+    margin-right: 5px;
+    float: right;
+    background: black;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: white;
+}
+
+footer {
+    right: 0;
+    left: 0;
+    font-family: Arial;
+    position:absolute;
+    bottom:0;
+    font-size: 90%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }

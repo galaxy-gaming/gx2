@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/player.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GX2 | {{ game.name}}</title>
+</head>
+<body>
+    <div class="navbar">
+        <button type="button" class="navbar-buttons" onclick="location.href='/';">Home</button>
+        <button type="button" class="navbar-buttons-right" onclick="location.href='/admin';">Admin</button>
+        <button type="button" class="navbar-buttons-right" onclick="location.href='/credits';">Credits</button>
+    </div>
+    <br>
+    <div>
+        <iframe src="{{ game.path }}" style="width: 100%; height: 90vh; border: none">
+        Your browser doesn't support iframes :(
+        </iframe>
+    </div>
+    <footer style="margin-bottom: -30px;">Website version: NaN<br>Thanks for visiting GX2! <a style="color: white;" href="/credits">Credits</a> <a style="color: white;" target="_blank" href="https://github.com/galaxy-gaming/gx2">Github Repo</a></footer> <!-- We are working on the website version -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galaxy Gaming 2</title>
+  <link rel="icon" type="image/x-icon" href="/imgs/brand-imgs/favicon.png">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<style>
+    img {
+        object-fit: cover;
+    }
+</style>
+    <body>
+        <h1>Welcome to Galaxy Gaming 2!</h1>
+        <p>Thanks for using GX2.</p>
+        <div class="gamebtncenter">
+            {% for game in games %}
+                <button style="width: 200px; height: 200px;" onclick="location.href='/player?name={{ game.name_short }}';" class="rgbbtn"><img src="{{ game.img_path }}" width=100px height=100px><br>{{ game.name }}</button>
+            {% endfor %}
+        </div>
+<<<<<<< HEAD:templates/base.html
+        <div>
+          <p>Plays: {{ counter }}</p>
+          <footer>Website version: 1.0<br>Thanks for visiting GX2!</footer>
+        </div>
+=======
+          <footer style="margin-bottom: -30px;">Website version: NaN<br>Thanks for visiting GX2! <a style="color: white;" href="/credits">Credits</a> <a style="color: white;" target="_blank" href="https://github.com/galaxy-gaming/gx2">Github Repo</a></footer> <!-- We are working on the website version -->
+>>>>>>> d0f4cc7e1bfc1b0b1664b3d58d8f159728054dbf:templates/index.html
+    </body>
+</html>

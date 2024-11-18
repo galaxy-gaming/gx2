@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="navbar">
+        <button type="button" class="navbar-buttons" onclick="location.href='/';">Home</button>
+        <button type="button" class="navbar-buttons-right" onclick="location.href='/admin';">Admin</button>
+        <button type="button" class="navbar-buttons-right" onclick="location.href='/credits';">Credits</button>
+    </div>
+    <br>
+    <form id="game-add-form", method="POST" action="/admin/add-game-form">
+        <label for="gn">Game name:</label><br><br>
+        <input type="text" id="gn" name="gn" required><br><br>
+        <labal for="gp">Game Path:</labal><br><br>
+        <input type="text" id="gp" name="gp" required><br><br>
+        <label for="gp">Game Image Path:</label><br><br>
+        <input id="gip" name="gip" required></input><br><br>
+        <label for="gns">Game Name Short</label><br><br>
+        <input type="text" id="gns" name="gns" required><br><br><br>
+        <button type="submit">create</button>
+    </form>
+    <footer style="margin-bottom: -30px;">Website version: NaN<br>Thanks for visiting GX2! <a style="color: white;" href="/credits">Credits</a> <a style="color: white;" target="_blank" href="https://github.com/galaxy-gaming/gx2">Github Repo</a></footer> <!-- We are working on the website version -->
+</body>
+</html>
