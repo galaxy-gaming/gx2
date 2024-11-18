@@ -83,6 +83,20 @@
     color: white;
 }
 
+.navbar-buttons-current {
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background 0.5s ease;
+    background: black;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: white;
+}
+
 footer {
     right: 0;
     left: 0;
