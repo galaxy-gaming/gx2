@@ -32,13 +32,9 @@ def player():
 @app.route('/')
 def index():
     games = db.select('games')
-    file = open("web-counter.txt", "r")
-    content = file.read()
-    filew = open("web-counter.txt", "w")
-    filew.write(str(int(content) + 1))
     # Sort the dictionary by value in descending order
     sorted_data = sorted(games, key=lambda x: x["runcount"], reverse=True)
-    return render_template('index.html', games=sorted_data, counter=content)
+    return render_template('index.html', games=sorted_data)
     
 @app.route('/admin/login_form/', methods=['POST', "GET"])
 def admin_login_form():
