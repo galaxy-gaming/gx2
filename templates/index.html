@@ -28,6 +28,7 @@
         </div>
         <h1>Welcome to Galaxy Gaming 2!</h1>
         <p>Thanks for using GX2.</p>
+        <p>Go to our new game website database! <a href="https://opengamedb.bitsyncdev.com">Here</a></p>
         <div class="gamebtncenter">
             {% for game in games %}
                 <button style="width: 200px; height: 200px;" onclick="location.href='/player?name={{ game.name_short }}';" class="rgbbtn"><img src="{{ game.img_path }}" width=100px height=100px><br>{{ game.name }}</button>
